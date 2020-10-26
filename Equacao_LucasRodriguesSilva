@@ -1,7 +1,6 @@
 package equacao_lucasrodriguessilva;
 import java.util.Scanner;
 /**
- *
  * @author Lucas Rodrigues Silva
  */
 public class Equacao_LucasRodriguesSilva {
@@ -38,16 +37,16 @@ public class Equacao_LucasRodriguesSilva {
                 {
                     X1 = ((-B) + Math.sqrt(delta)) / (2 * A);
 
-                    System.out.print("Deu = ou -, a 1º raíz é: " + X1 + " a 2º raíz não existe!");
+                    System.out.print("Deu + ou -, a 1º raíz é: " + X1 + " a 2º raíz não existe!");
                 }
                 else
                 {
-                    System.out.print("Não deu pra efetuar a conta!");
+                    System.out.print("Não deu para efetuar a conta!");
                 }
             }
             else
             {
-                System.out.print("A = 0, aí é mais impossível que antes");
+                System.out.print("A = 0, impossível efetuar conta!");
             }
     }
     
