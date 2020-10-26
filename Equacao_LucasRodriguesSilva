@@ -1,0 +1,54 @@
+package equacao_lucasrodriguessilva;
+import java.util.Scanner;
+/**
+ *
+ * @author Lucas Rodrigues Silva
+ */
+public class Equacao_LucasRodriguesSilva {
+
+    
+
+    public static void main(String[] args) {
+        double A, B, C, X1, X2, delta;
+        Scanner entrada = new Scanner(System.in);
+        
+          System.out.print("Digite o valor de A: ");
+          
+          A = entrada.nextDouble();
+          
+          System.out.print("Digite o valor de B: ");
+          
+          B = entrada.nextDouble();
+          
+          System.out.print("Digite o valor de C: ");
+          
+          C = entrada.nextDouble();
+
+            if(A != 0)
+            {
+                delta = Math.pow(B, 2) - (4 * A * C);
+                if(delta > 0)
+                {
+                    X1 = ((-B) + Math.sqrt(delta)) / (2 * A);
+                    X2 = ((-B) - Math.sqrt(delta)) / (2 * A);
+
+                    System.out.print("Deu certo, a 1º raíz é: " + X1 + " e a 2º é: " + X2);
+                }
+                else if(delta == 0)
+                {
+                    X1 = ((-B) + Math.sqrt(delta)) / (2 * A);
+
+                    System.out.print("Deu = ou -, a 1º raíz é: " + X1 + " a 2º raíz não existe!");
+                }
+                else
+                {
+                    System.out.print("Não deu pra efetuar a conta!");
+                }
+            }
+            else
+            {
+                System.out.print("A = 0, aí é mais impossível que antes");
+            }
+    }
+    
+}
